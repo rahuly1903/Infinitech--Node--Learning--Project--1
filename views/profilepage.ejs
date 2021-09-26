@@ -1,0 +1,41 @@
+<%- include('header') %>
+    <section id="form">
+        <!--form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1">
+                    <div class="login-form">
+                        <!--login form-->
+                        <h2>Upload file with page refresh</h2>
+                        <form action="/profile" method="post" enctype="multipart/form-data">
+                            <input type="name" name="name" placeholder="Name" />
+                            <input type="email" name="email" placeholder="Email" />
+                            <input type="file" name="profileImage" multiple="multiple">
+                            <button type="submit" id="profile-form-submit" class="btn btn-default">Login</button>
+                        </form>
+                        <p id="error-text"></p>
+                    </div>
+                    <!--/login form-->
+                </div>
+                <div class="col-sm-1">
+                    <h2 class="or">OR</h2>
+                </div>
+                <div class="col-sm-4 col-sm-offset-1">
+                    <div class="login-form">
+                        <!--login form-->
+                        <h2>Upload file with ajax</h2>
+                        <form action="/login" id="ajax-profile-form">
+                            <input type="email" name="email" placeholder="Email Address" />
+                            <input type="password" name="password" placeholder="Password" />
+                            <input type="file" name="profileImage" multiple="multiple">
+                            <button type="button" id="ajax-form-submit" class="btn btn-default">Login</button>
+                        </form>
+                        <p id="error-text"></p>
+                    </div>
+                    <!--/login form-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/form-->
+    <%- include ('footer') -%>̀
